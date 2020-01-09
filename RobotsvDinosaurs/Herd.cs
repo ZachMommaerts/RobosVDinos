@@ -9,7 +9,7 @@ namespace RobotsvDinosaurs
     class Herd
     {
         // member variables
-        List<Dinosaur> dinosaurs;
+        List<Dinosaur> dinosuars;
 
         //constructor
         Dinosaur barney = new Dinosaur("barney", 120, 30, 40, 70, 40);

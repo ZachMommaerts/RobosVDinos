@@ -17,11 +17,12 @@ namespace RobotsvDinosaurs
         public int evadechance;
         public int hitchance;
         public int speed;
+        public int attack;
 
         // constructor
         public Dinosaur(string type, int health, int attackPower, int evadechance, int hitchance, int speed)
         {
-            this.energy = 100;
+            energy = 100;
             this.type = type;
             this.health = health;
             this.attackPower = attackPower;
@@ -33,6 +34,16 @@ namespace RobotsvDinosaurs
 
         // member methods
 
-        
+        public int RandomGenerator(int min, int max);
+        {
+            Random rng = new Random();
+            int numberone = rng.Next(0 - 100);
+            return numberone;
+        }
+
+        public void Attack();
+        {
+            if(Robot)
+        }
     }
 }

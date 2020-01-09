@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotsvDinosaurs
 {
-    class Robot
+    public class Robot
     {
         // member variables
 
