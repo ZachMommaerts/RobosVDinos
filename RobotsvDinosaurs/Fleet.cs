@@ -9,7 +9,7 @@ namespace RobotsvDinosaurs
     class Fleet
     {
         // member variables
-        List<Robot> robots;
+        public List<Robot> robots;
 
         Weapon railgun = new Weapon("railguin", 20);
 
@@ -21,7 +21,7 @@ namespace RobotsvDinosaurs
         //constructor
         public Fleet()
         {
-            List<Robot> robots = new List<Robot>();
+            robots = new List<Robot>();
             
             Robot megatron = new Robot("megatron", 120, 30, 40, 70, 40, railgun);
 

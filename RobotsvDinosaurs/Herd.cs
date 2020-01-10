@@ -9,13 +9,15 @@ namespace RobotsvDinosaurs
     class Herd
     {
         // member variables
-        List<Dinosaur> dinosaurs;
+        public List<Dinosaur> dinosaurs;
+        public Dinosaur dinosaur;
 
         //constructor
 
         public Herd()
         {
-        List<Dinosaur> dinosaurs = new List<Dinosaur>();
+        dinosaurs = new List<Dinosaur>();
+            dinosaur
 
         Dinosaur barney = new Dinosaur("barney", 120, 30, 40, 70, 40);
 
@@ -31,14 +33,6 @@ namespace RobotsvDinosaurs
         }
 
         //member methods
-
-        public Herd(List<Dinosaur> dinosaurs)
-        {    
-            foreach (Dinosaur dinosaur in dinosaurs)
-            {
-                Console.WriteLine($"{dinosaur.type}");
-            }
-        }
 
         
         

@@ -39,7 +39,30 @@ namespace RobotsvDinosaurs
         {
             if (dinosaur.evadechance < hitchance)
             {
-                dinosaur.health -= attackPower;
+                dinosaur.health -= (attackPower + weapon.weaponattackpwr);
+                pwrlvl -= 10;
+                Console.WriteLine($"{name} attacks {dinosaur.type} for {attackPower + weapon.weaponattackpwr}");
+            }
+            if(pwrlvl <= 0)
+            {
+                dinosaur.health -= 0;
+                Console.WriteLine($"{name} tried to attack {dinosaur.type} but is out of power");
+            }
+            if(health <= 0)
+            {
+                return;
+            }
+            else
+            {
+                dinosaur.health -= 0;
+                Console.WriteLine($"{name} missed their attack on {dinosaur.type}");
+            }
+        }
+        public void Powerdown()
+        {
+            if (health <= 0)
+            {
+                Console.WriteLine($"{name} has powered down!");
             }
         }
     }
