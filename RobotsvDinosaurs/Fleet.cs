@@ -11,27 +11,32 @@ namespace RobotsvDinosaurs
         // member variables
         List<Robot> robots;
 
-        //constructor
-        Weapon railguin = new Weapon("railguin", 20);
+        Weapon railgun = new Weapon("railguin", 20);
 
         Weapon sword = new Weapon("sword", 10);
 
         Weapon laser = new Weapon("laser", 30);
 
-        Robot megatron = new Robot("megatron", 120, 30, 40, 70, 40);
 
-        Robot starscream = new Robot("starscream", 160, 20, 30, 80, 30);
+        //constructor
+        public Fleet()
+        {
+            List<Robot> robots = new List<Robot>();
+            
+            Robot megatron = new Robot("megatron", 120, 30, 40, 70, 40, railgun);
 
-        Robot shockwave = new Robot("shockwave", 100, 10, 50, 90, 60);
+            robots.Add(megatron);
+
+            Robot starscream = new Robot("starscream", 160, 20, 30, 80, 30, sword);
+
+            robots.Add(starscream);
+
+            Robot shockwave = new Robot("shockwave", 100, 10, 50, 90, 60, laser);
+
+            robots.Add(shockwave);
+        }
 
         //member methods
-        public Fleet(List<Robot> robots)
-        {
-            foreach (Robot robot in robots)
-            {
-                Console.WriteLine($"{robot.name}");
-            }
-        }
 
 
     }

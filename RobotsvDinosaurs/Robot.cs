@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotsvDinosaurs
 {
-    public class Robot
+    class Robot
     {
         // member variables
 
@@ -33,7 +33,14 @@ namespace RobotsvDinosaurs
             this.weapon = weapon;
 
         }
-
         // member methods
+
+        public void RoboAttack(Dinosaur dinosaur)
+        {
+            if (dinosaur.evadechance < hitchance)
+            {
+                dinosaur.health -= attackPower;
+            }
+        }
     }
 }
