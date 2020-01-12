@@ -10,6 +10,10 @@ namespace RobotsvDinosaurs
     {
         static void Main(string[] args)
         {
+            battlefield2C battle = new battlefield2C();
+            battle.PickYourFighter();
+            Console.ReadLine();
+
         }
     }
 }

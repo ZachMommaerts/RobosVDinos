@@ -23,15 +23,15 @@ namespace RobotsvDinosaurs
         {
             robots = new List<Robot>();
             
-            Robot megatron = new Robot("megatron", 120, 30, 40, 70, 40, railgun);
+            Robot megatron = new Robot("megatron", 120, 30, 0, 70, 40, railgun);
 
             robots.Add(megatron);
 
-            Robot starscream = new Robot("starscream", 160, 20, 30, 80, 30, sword);
+            Robot starscream = new Robot("starscream", 160, 20, 0, 80, 30, sword);
 
             robots.Add(starscream);
 
-            Robot shockwave = new Robot("shockwave", 100, 10, 50, 90, 60, laser);
+            Robot shockwave = new Robot("shockwave", 100, 10, 0, 90, 60, laser);
 
             robots.Add(shockwave);
         }

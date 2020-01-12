@@ -17,17 +17,16 @@ namespace RobotsvDinosaurs
         public Herd()
         {
         dinosaurs = new List<Dinosaur>();
-            dinosaur
 
-        Dinosaur barney = new Dinosaur("barney", 120, 30, 40, 70, 40);
+        Dinosaur barney = new Dinosaur("barney", 120, 30, 0, 70, 40);
 
         dinosaurs.Add(barney);
 
-        Dinosaur reptar = new Dinosaur("reptar", 160, 20, 30, 80, 30);
+        Dinosaur reptar = new Dinosaur("reptar", 160, 20, 0, 80, 30);
 
         dinosaurs.Add(reptar);
 
-        Dinosaur rex = new Dinosaur("rex", 100, 10, 50, 90, 60);
+        Dinosaur rex = new Dinosaur("rex", 100, 10, 50, 0, 60);
 
         dinosaurs.Add(rex);
         }

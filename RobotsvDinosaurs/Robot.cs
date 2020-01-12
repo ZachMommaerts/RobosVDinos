@@ -47,6 +47,7 @@ namespace RobotsvDinosaurs
             {
                 dinosaur.health -= 0;
                 Console.WriteLine($"{name} tried to attack {dinosaur.type} but is out of power");
+                pwrlvl += 20;
             }
             if(health <= 0)
             {
@@ -58,12 +59,11 @@ namespace RobotsvDinosaurs
                 Console.WriteLine($"{name} missed their attack on {dinosaur.type}");
             }
         }
-        public void Powerdown()
+        public int RandomGenerator(int min, int max)
         {
-            if (health <= 0)
-            {
-                Console.WriteLine($"{name} has powered down!");
-            }
+            Random rng = new Random();
+            int random = rng.Next();
+            return random;
         }
     }
 }
